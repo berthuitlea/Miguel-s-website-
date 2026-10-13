@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel | Electronic Security & Automation</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      color: #10243a;
+      line-height: 1.6;
+    }
+
+    .container { width: 90%; max-width: 1100px; margin: auto; }
+
+    header { padding: 20px 0; background: white; }
+
+    nav { display: flex; justify-content: space-between; align-items: center; }
+
+    .logo { font-size: 1.5rem; font-weight: 800; color: #1769ff; }
+
+    nav a { text-decoration: none; color: #10243a; margin-left: 25px; font-size: .9rem; }
+
+    .hero {
+      background: linear-gradient(120deg, #10243a, #174d78);
+      color: white;
+      padding: 90px 0;
+    }
+
+    .hero-content { max-width: 650px; }
+
+    .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.15; margin: 15px 0; }
+
+    .hero h1 span { color: #46d9e8; }
+
+    .hero p { color: #d0dceb; margin: 20px 0 30px; }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      background: #1769ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    section { padding: 75px 0; }
+
+    .subtitle { color: #1769ff; font-weight: 800; text-transform: uppercase; font-size: .8rem; letter-spacing: 2px; }
+
+    h2 { font-size: 2.2rem; margin: 12px 0 20px; }
+
+    .intro { color: #536174; max-width: 650px; margin-bottom: 35px; }
+
+    .services { background: #f4f7fb; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      border: 1px solid #e4eaf2;
+    }
+
+    .card i { font-size: 1.8rem; color: #1769ff; margin-bottom: 18px; }
+
+    .card h3 { margin-bottom: 10px; }
+
+    .card p { color: #536174; font-size: .92rem; }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .about p { color: #536174; margin-bottom: 18px; }
+
+    .advantages { background: #10243a; color: white; }
+
+    .advantages .intro { color: #d0dceb; }
+
+    .advantages .grid { margin-top: 30px; }
+
+    .advantages .card { background: #18344f; border: none; }
+
+    .advantages .card p { color: #d0dceb; }
+
+    .contact { text-align: center; background: #f4f7fb; }
+
+    .contact p { color: #536174; margin: 15px 0 25px; }
+
+    footer { background: #0b1929; color: white; padding: 25px 0; text-align: center; font-size: .85rem; }
+
+    @media (max-width: 750px) {
+      .grid, .about { grid-template-columns: 1fr; }
+      nav { flex-wrap: wrap; gap: 12px; }
+      nav a { margin-left: 10px; }
+      .hero { padding: 65px 0; }
+      h2 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="container">
+    <div class="logo"><i class="fa-solid fa-bolt"></i> MIGUEL.</div>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero">
+  <div class="container hero-content">
+    <span class="subtitle">Electronic Security & Automation</span>
+    <h1>Smarter Systems.<br><span>Safer Spaces.</span></h1>
+    <p>
+      Professional installation, maintenance and repair of electronic
+      security and automation systems for homes and businesses.
+    </p>
+    <a href="#contact" class="btn">Get a Free Diagnosis <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <span class="subtitle">Our Expertise</span>
+    <h2>Our Services</h2>
+    <p class="intro">Practical and personalized solutions to make your property safer, smarter and easier to manage.</p>
+
+    <div class="grid">
+      <div class="card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Electronic Security</h3>
+        <p>Security cameras, alarms and remote monitoring systems.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-warehouse"></i>
+        <h3>Gates & Garage Doors</h3>
+        <p>Installation and maintenance of automated gates, doors and remote controls.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-house-signal"></i>
+        <h3>Smart Home Systems</h3>
+        <p>Connected shutters, access controls and home automation solutions.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <h3>Maintenance & Repairs</h3>
+        <p>Technical diagnosis, troubleshooting and preventive maintenance.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-building"></i>
+        <h3>Business Solutions</h3>
+        <p>Electronic equipment and security solutions for professional premises.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-sliders"></i>
+        <h3>Personalized Solutions</h3>
+        <p>Technical recommendations adapted to your needs and budget.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container about">
+    <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=80"
+         alt="Electronics technician working on equipment">
+
+    <div>
+      <span class="subtitle">About Miguel</span>
+      <h2>Technical Expertise, Human Approach.</h2>
+      <p>
+        With a background in electronics engineering, Miguel combines
+        technical knowledge with a practical understanding of customer needs.
+      </p>
+      <p>
+        His goal is to provide reliable installations, personalized advice
+        and ongoing support through a single point of contact.
+      </p>
+      <a href="#contact" class="btn">Let's Discuss Your Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="advantages">
+  <div class="container">
+    <span class="subtitle">Why Choose Us?</span>
+    <h2>More Than Just Installation.</h2>
+    <p class="intro">A local service built around quality, flexibility and customer satisfaction.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Technical Expertise</h3>
+        <p>Professional knowledge of electronic systems and automation.</p>
+      </div>
+      <div class="card">
+        <h3>Customer Proximity</h3>
+        <p>Direct communication and personalized customer support.</p>
+      </div>
+      <div class="card">
+        <h3>Ongoing Maintenance</h3>
+        <p>Installation, repairs and maintenance through one contact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <span class="subtitle">Get in Touch</span>
+    <h2>Let's Make Your Property Smarter.</h2>
+    <p>Contact us to discuss your needs and receive a personalized quotation.</p>
+    <a href="mailto:contact@example.com" class="btn">
+      <i class="fa-solid fa-envelope"></i> Contact Us
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Miguel. Electronic Security · Automation · Maintenance</p>
+  </div>
+</footer>
+
+</body>
+</html>
